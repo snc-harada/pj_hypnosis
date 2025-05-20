@@ -1,0 +1,13 @@
+<header id="header">
+  <div class="header_inner">
+    <a href="./" class="hlogo">
+        <img src="./img/logo/header_logo.webp" alt="ロゴ">
+    </a>
+    <div>
+      <a href="https://tayori.com/form/7394ed8f96a2db0ad5590c8017dc265f8baa135b" class="contct_head" target="_blank"><img src="./img/common/icon_mail_w.svg" alt="お問い合わせ"></a>
+      <a href="https://www.snc-jp.com/booking-calendar" target="_blank" class="btn jump_to_ticket">
+        <img src="./img/header_btn.webp" alt="チケットを購入する">
+      </a>
+    </div>
+  </div>
+</header>
