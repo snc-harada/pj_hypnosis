@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="flex copyflex">
-            <p class="copyright">©催眠術2025</p>
+            <p class="copyright">©リアル検証催眠体験2025</p>
             <div class="copyflex-inner">
                 <a href="./pdf/asct.pdf" class="copypp asct" target="_blank">特定商取引法について</a>
                 <a href="./pdf/privacy_policy.pdf" class="copypp" target="_blank">プライバシーポリシー</a>

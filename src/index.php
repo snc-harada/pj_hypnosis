@@ -9,7 +9,7 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
 
 <head>
     <meta charset="UTF-8">
-    <title>催眠術2025 | 神戸三宮で楽しめる催眠術イベント！</title>
+    <title>リアル検証催眠体験2025 | 神戸三宮で楽しめる催眠術イベント！</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="神戸で話題の催眠術イベント開催！プロの催眠術師があなたの潜在意識にアプローチ。驚きと笑いが詰まった体験型イベントを今すぐチェック！">
 
@@ -39,6 +39,13 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
     <meta property="og:url" content="https://www.starrynightcompany.com/pj_hypnosis/"><!-- サイトURL -->
     <meta property="og:image" content="https://www.starrynightcompany.com/pj_hypnosis/img/ogp.webp?v=2"><!-- 1200x630推奨 -->
     <meta property="og:description" content="神戸で話題の催眠術イベント開催！プロの催眠術師があなたの潜在意識にアプローチ。驚きと笑いが詰まった体験型イベントを今すぐチェック！">
+    <!-- 神戸 催眠術 イベント 体験
+    神戸 催眠術師 パフォーマンス
+    催眠術 ショー 関西 おすすめ
+    初めての催眠術 イベント 神戸
+    神戸 夜 イベント 催眠ショー
+    催眠術 イベント 参加型 関西
+    神戸 おもしろ 変わったイベント -->
 
     <!-- X (Twitter) -->
     <meta name="twitter:card" content="summary_large_image">
@@ -59,9 +66,9 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
     <link rel="manifest" href="./img/favicon/site.webmanifest" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet"> -->
 
     <!-- css -->
     <link rel="stylesheet" href="./css/default.css">
@@ -99,179 +106,198 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
     <!-- header -->
     <?php include('./php/common/header_lp.php'); ?>
     <main>
+        <div class="whitezone anm"><img src="./img/top_deco.webp" alt="チャレンジャー募集中01"><img src="./img/top_deco.webp" alt="チャレンジャー募集中02"></div>
         <div class="first_view">
-            <img src="./img/fv.webp?v=3" alt="神戸三宮から徒歩10分！格付けイベントが体験できる新感覚エンターテイメント！">
+            <h1><img src="./img/fv.webp?v=3" alt="リアル検証催眠体験2025ー神戸三宮から徒歩10分！催眠術イベントが体験できる新感覚エンターテイメント！"></h1>
+            <!-- <div class="badge">
+                <img src="./img/badge.webp" alt="神戸三宮から徒歩10分">
+            </div> -->
         </div>
-        <div class="obi_con">
+        <!-- <div class="obi_con"> -->
             <!-- <p class="attention-p red">※ご盛況につき、3月8日〜3月31日までの<span class="i-text">当日券はございません。</span></p> -->
             <!-- <p class="come">4月開催分のチケット販売が決定しました！<span class="i-text">【3/11(火) 販売開始予定】(25.3.7更新)</span></p> -->
             <!-- <p class="come">4月開催分のチケット販売開始！<span class="i-text">(25.3.11更新)</span></p> -->
-            <p class="attention-p">会場にて当日券発売中！</p>
+            <!-- <p class="attention-p">会場にて当日券発売中！</p>
             <p class="come">※当日券情報は<a href="https://x.com/NandemoCompany" target="_blank">@NandemoCompany</a>にてご確認ください</p>
-        <div class="lp_con">
-            <div class="link_area">
-                <img src="./img/con01.webp?v=2" alt="参加型イベント『格付けチャレンジ』神戸三宮で開催！">
-                <div class="btn_area">
-                    <a href="https://www.snc-jp.com/booking-calendar" class="btn_con jump_to_ticket" target="_blank"><img src="./img/btn.webp" alt="チケットのご予約はこちら"></a>
-                    <!-- <p class="attention-p">※ご盛況につき、3月8日〜3月31日までの<span class="i-text">当日券はございません。</span></p> -->
-                    <p class="come attention-p">※会場にて当日券発売中！<br><span class="i-text">※当日券情報は<a href="https://x.com/NandemoCompany" target="_blank">@NandemoCompany</a>にてご確認ください</span></p>
-                </div>
-            </div>
-            <img src="./img/con02.webp?v=<?php echo filemtime('./img/con02.webp'); ?>" alt="格付けチャレンジは厳選された食材や芸術を使用！">
-            </section>
-            <section class="howtoplay" id="howtoplay">
-                <h2><img src="./img/con03.webp" alt="格付けチェックの遊び方"></h2>
-                <div class="link_area">
-                    <img src="./img/con03_01.webp" alt="01.チケットを購入する">
+        </div> -->
+        <div class="lp_con deco">
+            <div class="inner">
+                <!-- <div class="link_area">
+                    <img src="./img/con01.webp?v=2" alt="参加型イベント『格付けチャレンジ』神戸三宮で開催！">
                     <div class="btn_area">
                         <a href="https://www.snc-jp.com/booking-calendar" class="btn_con jump_to_ticket" target="_blank"><img src="./img/btn.webp" alt="チケットのご予約はこちら"></a>
                         <p class="come attention-p">※会場にて当日券発売中！<br><span class="i-text">※当日券情報は<a href="https://x.com/NandemoCompany" target="_blank">@NandemoCompany</a>にてご確認ください</span></p>
                     </div>
-                </div>
-                <div class="link_area">
-                    <img src="./img/con03_02.webp" alt="02.格付けチャレンジに行く">
-                    <div class="btn_area acc">
-                        <p class="accLink"><img src="./img/con03_02_btn.webp" alt="詳しくはこちら"></p>
+                </div> -->
+                <section class="howtoplay" id="howtoplay">
+                    <h2 class="itemdiv"><img src="./img/con01.webp" alt="プロの催眠師による催眠体験"></h2>
+                    <div class="link_area itemdiv">
+                        <img src="./img/con02_01.webp" alt="01.チケットを購入する">
+                        <div class="btn_area">
+                            <a href="./" class="btn_con jump_to_ticket" target="_blank"><img src="./img/btn.webp" alt="01.チケットのご予約はこちら"></a>
+                            <!-- <p class="come attention-p">※会場にて当日券発売中！<br><span class="i-text">※当日券情報は<a href="https://x.com/NandemoCompany" target="_blank">@NandemoCompany</a>にてご確認ください</span></p> -->
+                        </div>
                     </div>
-                    <a href="https://maps.app.goo.gl/hvzKSBARjXXHSsUFA" class="area" target="_blank" aria-label="googlemapを表示する"></a>
-                </div>
-                <img src="./img/con03_03.webp" alt="03.受付に行く">
-                <img src="./img/con03_04.webp" alt="04.ゲームスタート">
-                <div class="attention_rule content_wrap">
-                    <h3 class="subtit"><img src="./img/subt_game.webp" alt="ゲームの注意事項"></h3>
-                    <ul class="ruleList">
-                        <li>・会場はビルの2階にあり、エレベーターはございません。 階段のみのアクセスとなりますのでご注意ください。</li>
-                        <li>・待合スペースはございません。10分以上前のご来場はご遠慮ください。</li>
-                        <li>・一部のチェックでは飲食を伴うものがございます。 アレルギーをお持ちの方は、事前にスタッフまでお知らせください。</li>
-                        <li>・本イベントでは酒類の提供はございません。</li>
-                        <li>・ゲームの特性上、目隠しをする場面がございます。 不安な方は当日、スタッフまでご相談ください。</li>
-                        <li>・回答部屋は若干狭くなっております。 閉所が苦手な方は、当日スタッフまでご相談ください。</li>
-                        <li>・途中入退場は原則不可となります。 体調が優れないなど、やむを得ない場合はスタッフにお申し付けください。</li>
-                        <li>・開演後の途中参加はできません。</li>
-                        <li>・他のお客様のご迷惑となる行為や、イベントの進行を妨げる行為があった場合、スタッフの判断によりご退場いただくことがございます。皆様が楽しく参加できるよう、ご協力をお願いいたします。</li>
-                        <li>・1公演の参加人数は最大8名までで、他のグループと合同での参加となる場合がございます。</li>
-                        <li>・お忘れ物をされた場合、当日は受付にて対応いたします。スタッフまでお声がけください。(翌日以降のお問い合わせは、<a href="https://tayori.com/form/7394ed8f96a2db0ad5590c8017dc265f8baa135b" target="_blank">STARRY NIGHT COMPANY</a>までお願いいたします。)</li>
-                    </ul>
-                </div>
+                    <div class="link_area gomap itemdiv">
+                        <img src="./img/con02_02.webp" alt="02.会場へ向かう">
+                        <div class="btn_area acc">
+                            <p class="accLink"><img src="./img/con02_02_btn.webp" alt="詳しくはこちら"></p>
+                        </div>
+                        <a href="https://maps.app.goo.gl/hvzKSBARjXXHSsUFA" class="area" target="_blank" aria-label="googlemapを表示する"></a>
+                    </div>
+                    <div class="itemdiv"><img src="./img/con02_03.webp" alt="03.受付に行く"></div>
+                    <div class="itemdiv"><img src="./img/con02_04.webp" alt="04.検証スタート"></div>
+                </section>
+            </div>
+            <section class="content03">
+                <img src="./img/con03.webp" alt="体験の様子も撮影できる！">
             </section>
-            <section class="ticketarea base-con" id="ticket">
-                <h2 class="mainTit">
-                    <img src="./img/tit_ticket.webp" alt="チケット料金">
-                </h2>
-                <table>
-                    <tr class="mar">
-                        <th>前売り券</th>
-                        <td>
-                            <div>3,500yen<span>(当日券:4,000yen)</span></div>
-                        </td>
-                    </tr>
-                    <!-- <tr>
-                    <th>当日券</th>
-                    <td>3,500yen</td>
-                </tr> -->
-                </table>
-                <div class="attention_rule content_wrap">
-                    <h3 class="subtit"><img src="./img/subt_ticket.webp" alt="チケットの注意事項"></h3>
-                    <ul class="ruleList">
-                        <li>
-                            <div class="ticketrule_area"><a href="./pdf/ticket_rule.pdf" target="_blank">
-                                    <p>チケット規約はこちら</p>
-                                </a></div>
-                            <p class="come">※クリックで別窓が開きます。</p>
-                        </li>
-                        <li>・ご参加には必ず予約完了メール（チケット）が必要です。参加される人数分のチケットをご購入いただき、当日受付にて受付完了メール画面（チケット）をご提示ください。</li>
-                        <li>・1公演につき最低2名以上の参加者が必要です。最低人数に達しなかった場合は、事前に告知のうえ公演を中止し、チケットの払い戻しについてご案内いたします。<span>（前日までに開催判断のメールが送られます）</span></li>
-                        <li>・ご予約後のキャンセル、日付変更や別公演への振り替えはできません。チケット購入の際は、スケジュールを十分にご確認のうえ、お申し込みください。</li>
-                        <li>・前売券は参加日前日の夕方頃まで購入可能です。（手動で日付更新を行っておりますので、なるべくお早めにご購入ください）</li>
-                        <li>・チケットは事前予約制ですが、定員に空きがある場合のみ当日券を販売いたします。当日券の有無については、受付にてご確認ください。<span>※3月8日〜3月31日までの当日券はございません</span></li>
-                        <li>・当イベントは中学生以上のお客様が対象となるイベントです。小学生以下の方はご入場いただけませんのでご了承ください。（待機スペース等のご用意もございません）</li>
-                        <li class="red">・チケット販売画面で表示されている数が残りの参加枠になります。お連れ様がいらっしゃる場合は、必ず2枚以上のチケットが確保できることを確認してからご購入ください。</li>
-                    </ul>
+            <article class="cta">
+                <div class="inner">
+                    <div class="itemdiv">
+                        <img src="./img/con04.webp" alt="チケットはWEB購入がお得！">
+                    </div>
                 </div>
                 <div class="btn_area">
                     <a href="https://www.snc-jp.com/booking-calendar" class="btn_con jump_to_ticket" target="_blank"><img src="./img/btn.webp" alt="チケットのご予約はこちら"></a>
-                    <p class="come attention-p">※会場にて当日券発売中！<br><span class="i-text">※当日券情報は<a href="https://x.com/NandemoCompany" target="_blank">@NandemoCompany</a>にてご確認ください</span></p>
+                    <p class="btn_att"><img src="./img/ticket_att.webp" alt="※お一人様につき、１枚チケットが必要です。※参加人数により、販売できない可能性がございます。"></p>
+                    <!-- <p class="come attention-p">※会場にて当日券発売中！<br><span class="i-text">※当日券情報は<a href="https://x.com/NandemoCompany" target="_blank">@NandemoCompany</a>にてご確認ください</span></p> -->
                 </div>
-            </section>
-            <section class="attention top-con" id="attention">
-                <h2 class="mainTit">
-                    <img src="./img/tit_faq.webp" alt="注意事項など">
-                </h2>
-                <ul class="accordion-area">
-                    <li class="accarea-item">
-                        <div class="acctitle">
-                            <p class="txt">会場に駐車場はありますか？</p>
-                        </div>
-                        <div class="accbox">
-                            <ul class="ticketList">
-                                <li class="list-item">
-                                    <p>会場専用の駐車場はございません。 お車でお越しの際は、近隣のコインパーキング等をご利用ください。</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="accarea-item">
-                        <div class="acctitle">
-                            <p class="txt">手荷物を預かってもらえますか？</p>
-                        </div>
-                        <div class="accbox">
-                            <ul class="ticketList">
-                                <li class="list-item">
-                                    <p>お荷物のお預かりは可能ですが、貴重品の管理はお客様ご自身でお願いいたします。 紛失・盗難についての責任は負いかねますので、ご了承ください。</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="accarea-item">
-                        <div class="acctitle">
-                            <p class="txt">参加に年齢制限はありますか？</p>
-                        </div>
-                        <div class="accbox">
-                            <ul class="ticketList">
-                                <li class="list-item">
-                                    <p>当イベントは中学生以上のお客様が対象となるイベントです。小学生以下の方はご入場いただけませんのでご了承ください。（待機スペース等のご用意もございません）</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="accarea-item">
-                        <div class="acctitle">
-                            <p class="txt">チェックする項目の内容を教えてもらえますか？</p>
-                        </div>
-                        <div class="accbox">
-                            <ul class="ticketList">
-                                <li class="list-item">
-                                    <p>チェック内容は当日のお楽しみとなっております。事前に詳細をお伝えすることはできません。<br><span class="come">※酒類の提供はございませんので、未成年の方でもお楽しみいただけます。</span></p>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="accarea-item">
-                        <div class="acctitle">
-                            <p class="txt">ゴミは捨てられますか？</p>
-                        </div>
-                        <div class="accbox">
-                            <ul class="ticketList">
-                                <li class="list-item">
-                                    <p>原則として、お持ち帰りをお願いしています。</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="accarea-item">
-                        <div class="acctitle">
-                            <p class="txt">体調が悪くなったのでキャンセルしたいのですが、返金できますか？</p>
-                        </div>
-                        <div class="accbox">
-                            <ul class="ticketList">
-                                <li class="list-item">
-                                    <p>お客様都合によるキャンセルの払い戻しは対応いたしかねます。 あらかじめご了承のうえ、お申し込みください。</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+            </article>
+
+            <!-- ゲームの注意事項 -->
+            <!-- <div class="attention_rule content_wrap">
+                <h3 class="subtit"><img src="./img/subt_game.webp" alt="ゲームの注意事項"></h3>
+                <ul class="ruleList">
+                    <li>・会場はビルの2階にあり、エレベーターはございません。 階段のみのアクセスとなりますのでご注意ください。</li>
+                    <li>・待合スペースはございません。10分以上前のご来場はご遠慮ください。</li>
+                    <li>・一部のチェックでは飲食を伴うものがございます。 アレルギーをお持ちの方は、事前にスタッフまでお知らせください。</li>
+                    <li>・本イベントでは酒類の提供はございません。</li>
+                    <li>・ゲームの特性上、目隠しをする場面がございます。 不安な方は当日、スタッフまでご相談ください。</li>
+                    <li>・回答部屋は若干狭くなっております。 閉所が苦手な方は、当日スタッフまでご相談ください。</li>
+                    <li>・途中入退場は原則不可となります。 体調が優れないなど、やむを得ない場合はスタッフにお申し付けください。</li>
+                    <li>・開演後の途中参加はできません。</li>
+                    <li>・他のお客様のご迷惑となる行為や、イベントの進行を妨げる行為があった場合、スタッフの判断によりご退場いただくことがございます。皆様が楽しく参加できるよう、ご協力をお願いいたします。</li>
+                    <li>・1公演の参加人数は最大8名までで、他のグループと合同での参加となる場合がございます。</li>
+                    <li>・お忘れ物をされた場合、当日は受付にて対応いたします。スタッフまでお声がけください。(翌日以降のお問い合わせは、<a href="https://tayori.com/form/7394ed8f96a2db0ad5590c8017dc265f8baa135b" target="_blank" class="acctxt">STARRY NIGHT COMPANY</a>までお願いいたします。)</li>
                 </ul>
-            </section>
+            </div> -->
+        </div>
+            
+        <section class="ticketarea base-con" id="ticket">
+            <h2 class="mainTit">
+                <img src="./img/tit_ticket.webp" alt="チケット料金">
+            </h2>
+            <table>
+                <tr class="mar">
+                    <th>前売り券</th>
+                    <td>
+                        <div>3,500yen<span>(当日券:4,000yen)</span></div>
+                    </td>
+                </tr>
+                <!-- <tr>
+                <th>当日券</th>
+                <td>3,500yen</td>
+            </tr> -->
+            </table>
+            <div class="attention_rule content_wrap">
+                <h3 class="subtit"><img src="./img/subt_att.webp" alt="チケットの注意事項"></h3>
+                <ul class="ruleList">
+                    <li>
+                        <div class="ticketrule_area"><a href="./pdf/ticket_rule.pdf" target="_blank">
+                                <p>チケット規約はこちら</p>
+                            </a></div>
+                        <p class="come">※クリックで別窓が開きます。</p>
+                    </li>
+                    <li>・ご参加には必ず予約完了メール（チケット）が必要です。参加される人数分のチケットをご購入いただき、当日受付にて受付完了メール画面（チケット）をご提示ください。</li>
+                    <li>・1公演につき最低2名以上の参加者が必要です。最低人数に達しなかった場合は、事前に告知のうえ公演を中止し、チケットの払い戻しについてご案内いたします。<span>（前日までに開催判断のメールが送られます）</span></li>
+                    <li>・ご予約後のキャンセル、日付変更や別公演への振り替えはできません。チケット購入の際は、スケジュールを十分にご確認のうえ、お申し込みください。</li>
+                    <li>・前売券は参加日前日の夕方頃まで購入可能です。（手動で日付更新を行っておりますので、なるべくお早めにご購入ください）</li>
+                    <li>・チケットは事前予約制ですが、定員に空きがある場合のみ当日券を販売いたします。当日券の有無については、受付にてご確認ください。<span>※3月8日〜3月31日までの当日券はございません</span></li>
+                    <li>・当イベントは中学生以上のお客様が対象となるイベントです。小学生以下の方はご入場いただけませんのでご了承ください。（待機スペース等のご用意もございません）</li>
+                    <li class="red">・チケット販売画面で表示されている数が残りの参加枠になります。お連れ様がいらっしゃる場合は、必ず2枚以上のチケットが確保できることを確認してからご購入ください。</li>
+                </ul>
+            </div>
+        </section>
+        <section class="base-con" id="faq">
+            <h2 class="mainTit">
+                <img src="./img/tit_faq.webp" alt="よくある質問">
+            </h2>
+            <ul class="accordion-area">
+                <li class="accarea-item">
+                    <div class="acctitle">
+                        <p class="txt">会場に駐車場はありますか？</p>
+                    </div>
+                    <div class="accbox">
+                        <ul class="ticketList">
+                            <li class="list-item">
+                                <p>会場専用の駐車場はございません。お車でお越しの際は、近隣のコインパーキング等をご利用ください。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accarea-item">
+                    <div class="acctitle">
+                        <p class="txt">手荷物を預かってもらえますか？</p>
+                    </div>
+                    <div class="accbox">
+                        <ul class="ticketList">
+                            <li class="list-item">
+                                <p>お荷物のお預かりは可能ですが、貴重品の管理はお客様ご自身でお願いいたします。 紛失・盗難についての責任は負いかねますので、ご了承ください。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accarea-item">
+                    <div class="acctitle">
+                        <p class="txt">参加に年齢制限はありますか？</p>
+                    </div>
+                    <div class="accbox">
+                        <ul class="ticketList">
+                            <li class="list-item">
+                                <p>当イベントは中学生以上のお客様が対象となるイベントです。小学生以下の方はご入場いただけませんのでご了承ください。（待機スペース等のご用意もございません）</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accarea-item">
+                    <div class="acctitle">
+                        <p class="txt">チェックする項目の内容を教えてもらえますか？</p>
+                    </div>
+                    <div class="accbox">
+                        <ul class="ticketList">
+                            <li class="list-item">
+                                <p>チェック内容は当日のお楽しみとなっております。事前に詳細をお伝えすることはできません。<br><span class="come">※酒類の提供はございませんので、未成年の方でもお楽しみいただけます。</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accarea-item">
+                    <div class="acctitle">
+                        <p class="txt">ゴミは捨てられますか？</p>
+                    </div>
+                    <div class="accbox">
+                        <ul class="ticketList">
+                            <li class="list-item">
+                                <p>原則として、お持ち帰りをお願いしています。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accarea-item">
+                    <div class="acctitle">
+                        <p class="txt">体調が悪くなったのでキャンセルしたいのですが、返金できますか？</p>
+                    </div>
+                    <div class="accbox">
+                        <ul class="ticketList">
+                            <li class="list-item">
+                                <p>お客様都合によるキャンセルの払い戻しは対応いたしかねます。 あらかじめご了承のうえ、お申し込みください。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
             <section class="access base-con" id="access">
                 <h2 class="mainTit">
                     <img src="./img/tit_access.webp" alt="アクセス方法">
@@ -289,7 +315,7 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
                         <dl>
                             <dt>開催期間</dt>
                             <dd>
-                                2025年3月8日(土)〜4月27日(日)
+                                2025年6月14日(土)、15日(日)
                             </dd>
                         </dl>
                     </div>
@@ -318,6 +344,7 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
         </table> -->
 
             <p id="pageTop"><a href="#pTop"><img src="./img/common/arrow_w.svg" alt="ページトップへ"></a></p>
+        </div>
     </main>
     <!-- Footer -->
     <?php include('./php/common/footer.php'); ?>

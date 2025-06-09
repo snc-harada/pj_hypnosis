@@ -37,20 +37,19 @@
   @return clamp($min, $size_vw, $max);
 }
 // 色
-$base-font: white;
-$base-bg: #120605;
-$base-light: #f07c80;
-$base-darker: #511416;
-$base-acc: yellow;
-// $base-main: #6e2e2d;
-$base-main: #700d0d;
+$base-font: #323d54;
+$base-font2: #6679a1;
+$base-bg: #ffd3db;
+$base-main: #2a2d54;
+$base-light: #e6e6f0;
+$base-darker: #323d54;
+$base-acc: #dc728a;
 // 全体背景
-// $base-body: #b73f3d;
-$base-body: #a72624;
+$base-body: #ffd3db;
 // 画像背景
-$base-con: #9d1d21;
-$base-con2: #120605;
-$con2-light: #2e2c2c;
+$base-con: #2e2f3c;
+$base-con2: #2a2d54;
+$con2-light: #5d6192;
 
 $base-blue: #2f3b57;
 $base-red: #e04925;
@@ -59,9 +58,18 @@ $base-green: #47f27c;
 $base-black: #333;
 $base-white: white;
 
-$base-line: #d7b266;
+$base-line: #ccc;
 $base-link: $base-font;
 $base-hlink: #aaa;
+
+/* kosugi-maru-regular - japanese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Kosugi Maru";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/kosugi-maru-v16-japanese-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 /* color */
 .ifc {
@@ -117,7 +125,6 @@ body {
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: min(3.2vw, 32px);
-  font-weight: 500;
   letter-spacing: 0.05em;
   line-height: 1.6;
   position: relative;
@@ -125,7 +132,8 @@ body {
   color: $base-font;
   background: $base-bg;
   width: 100%;
-  font-family: "Noto serif JP", serif;
+  font-family: "Kosugi Maru";
+  font-weight: 400;
   &.open {
     height: 100vh;
   }
@@ -322,7 +330,6 @@ PCサイズ
   margin: 8px auto;
   text-align: left;
   width: 100%;
-  color: $base-font;
 }
 .attention-p {
   font-size: clamp(17px, 2.1vw, 21px);
@@ -412,7 +419,7 @@ body {
   }
 }
 main {
-  background: $base-con;
+  background: $base-bg;
   max-width: 1080px;
   margin: auto;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.16);
@@ -431,11 +438,21 @@ header {
   align-items: center;
   z-index: 12;
   transition: 0.2s;
+  .scactive {
+    display: none;
+  }
   &.headerScroll {
     // backdrop-filter: blur(12px);
     height: 80px;
     .header_inner {
-      background: $base-bg;
+      background: $base-darker;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
+    }
+    .scnone {
+      display: none;
+    }
+    .scactive {
+      display: block;
     }
   }
   .header_inner {
@@ -448,7 +465,7 @@ header {
     position: relative;
     padding: 5px 15px;
     transition: 0.2s;
-    background: $base-main;
+    background: #b9ddf7;
     div {
       max-height: 80px;
       height: 100%;
@@ -456,8 +473,8 @@ header {
       align-items: center;
       justify-content: flex-end;
       .contct_head {
-        margin-right: 12px;
-        width: 32px;
+        margin-right: 24px;
+        width: 48px;
       }
     }
     a {
@@ -471,39 +488,56 @@ header {
       }
       &.btn {
         max-height: 52px;
+        position: relative;
+        z-index: 2;
+        top: -6px;
+        left: -6px;
+        margin-top: 8px;
+        &:after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url(../img/header_btn_back.webp) no-repeat center
+            center/contain;
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          z-index: -1;
+        }
         img {
           transition: 0.2s;
         }
         &:hover {
           opacity: 1;
           img {
-            transform: scale(1.1);
+            transform: translate(5px, 5px);
           }
         }
       }
       &.hlogo {
-        padding: 4px 0 8px 0;
+        padding: 4px 0 8px 1em;
         height: 100%;
       }
     }
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 5px;
-      display: block;
-      background: linear-gradient(
-        45deg,
-        #b67b03 0%,
-        #daaf08 45%,
-        #fee9a0 70%,
-        #daaf08 85%,
-        #b67b03 90% 100%
-      );
-      box-shadow: 3px 3px 6px 3px rgba($color: #000, $alpha: 0.3);
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 5px;
+    //   display: block;
+    //   background: linear-gradient(
+    //     45deg,
+    //     #b67b03 0%,
+    //     #daaf08 45%,
+    //     #fee9a0 70%,
+    //     #daaf08 85%,
+    //     #b67b03 90% 100%
+    //   );
+    //   box-shadow: 3px 3px 6px 3px rgba($color: #000, $alpha: 0.3);
+    // }
   }
   a.hlogo {
     // min-width: 110px;
@@ -521,8 +555,18 @@ header {
   }
   @include ipad {
     height: 80px;
+    &.headerScroll {
+      height: 72px;
+    }
   }
   @include mid {
+    height: 60px;
+    &.headerScroll {
+      height: 55px;
+    }
+    .header_inner a.hlogo {
+      padding-left: 0;
+    }
     .header_inner a.btn {
       width: 50%;
       height: 100%;
@@ -530,12 +574,22 @@ header {
     }
   }
   @include sp {
-    height: 60px;
+    height: 45px;
     &.headerScroll {
-      height: 60px;
+      height: 42px;
     }
     .header_inner::after {
       height: 3px;
+    }
+    .header_inner a.btn:after {
+      top: 4px;
+      left: 4px;
+    }
+    .header_inner a.hlogo {
+      padding: 0 0 2px 0;
+      img {
+        width: auto;
+      }
     }
   }
 }
@@ -554,12 +608,20 @@ header {
         line-height: 1.45;
         margin-bottom: 0.5em;
         font-size: clamp(16px, 2.6vw, 26px);
+        color: $base-font;
         a {
           color: $base-acc;
+          background: #70a8c8;
           text-decoration: underline;
+          &.acctxt {
+            background: none;
+          }
         }
         &:last-child {
           margin-bottom: 0;
+        }
+        .come {
+          color: white;
         }
       }
     }
@@ -592,29 +654,37 @@ header {
 .base-con {
   padding: min(10%, 100px) 0;
 }
-// .first_view {
-//   padding-top: min(6vw, 20px);
-// }
-main {
-  margin-top: min(10.7vw, 100px);
-  @include ipad {
-    margin-top: 80px;
-  }
-  @include sp {
-    margin-top: 60px;
+.first_view {
+  position: relative;
+  .badge {
+    width: min(29.1%, 285px);
+    position: absolute;
+    bottom: -5%;
+    right: 20px;
+    z-index: 5;
   }
 }
+// main {
+//   margin-top: min(10.7vw, 100px);
+//   @include ipad {
+//     margin-top: 80px;
+//   }
+//   @include sp {
+//     margin-top: 60px;
+//   }
+// }
 #ticket {
   background: $base-con2;
   table {
     width: 74.36%;
-    background: $con2-light;
+    background: $base-darker;
     margin: min(8%, 60px) auto min(10%, 85px);
     border: 2px solid $base-line;
     font-size: clamp(20px, 3.5vw, 35px);
     tr {
       display: flex;
       justify-content: space-between;
+      border: 2px solid $base-white;
       // &.mar {
       //   th,
       //   td {
@@ -624,7 +694,11 @@ main {
     }
     th {
       border-right: 1px solid #777;
-      background: #666;
+      background: #e6e6f0;
+      color: $base-font;
+    }
+    td {
+      color: $base-white;
     }
     th,
     td {
@@ -671,9 +745,53 @@ main {
   margin: auto;
   transition: 0.2s;
   animation: btn 3.5s ease infinite;
+  position: relative;
+  z-index: 2;
+  top: 0;
+  left: 0;
   &:hover {
     opacity: 1;
     transform: scale(1.1);
+    // transform: translate(12px, 12px);
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 36%;
+    height: 60px;
+    background: url(../img/btn_before.webp) no-repeat center center/contain;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/btn_back.webp) no-repeat center center/contain;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: -1;
+    @include sp {
+      top: 6px;
+      left: 6px;
+    }
+  }
+}
+.link_area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .btn_area {
+    position: absolute;
+    // bottom: 6.5%;
+    bottom: 10%;
+    @include sp {
+      bottom: 12%;
+    }
   }
 }
 .btn_area {
@@ -737,18 +855,5 @@ main {
   }
   100% {
     transform: translateX(0);
-  }
-}
-.link_area {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  .btn_area {
-    position: absolute;
-    // bottom: 6.5%;
-    bottom: 10%;
-    @include sp {
-      bottom: 3.5%;
-    }
   }
 }

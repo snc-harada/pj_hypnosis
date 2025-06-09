@@ -1,9 +1,17 @@
 @charset "UTF-8";
 /*ブレイクポイントを設定*/
 /*sectionのpadding定義*/
+/* kosugi-maru-regular - japanese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Kosugi Maru";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/kosugi-maru-v16-japanese-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 /* color */
 .ifc {
-  color: #120605;
+  color: #ffd3db;
 }
 
 .white {
@@ -66,15 +74,15 @@ body {
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: min(3.2vw, 32px);
-  font-weight: 500;
   letter-spacing: 0.05em;
   line-height: 1.6;
   position: relative;
   overflow-x: hidden;
-  color: white;
-  background: #120605;
+  color: #323d54;
+  background: #ffd3db;
   width: 100%;
-  font-family: "Noto serif JP", serif;
+  font-family: "Kosugi Maru";
+  font-weight: 400;
 }
 body.open {
   height: 100vh;
@@ -95,7 +103,7 @@ body.open {
 }
 
 p {
-  color: white;
+  color: #323d54;
   text-align: left;
 }
 
@@ -111,15 +119,15 @@ a {
 }
 
 a:link {
-  color: white;
+  color: #323d54;
 }
 
 a:visited {
-  color: white;
+  color: #323d54;
 }
 
 a:active {
-  color: white;
+  color: #323d54;
 }
 
 a:hover {
@@ -326,7 +334,6 @@ PCサイズ
   margin: 8px auto;
   text-align: left;
   width: 100%;
-  color: white;
 }
 
 .attention-p {
@@ -407,7 +414,7 @@ table {
 画像LP用
 -----------------------------------------------------------*/
 body {
-  background: #a72624;
+  background: #ffd3db;
   position: relative;
 }
 body::before {
@@ -423,7 +430,7 @@ body::before {
 }
 
 main {
-  background: #9d1d21;
+  background: #ffd3db;
   max-width: 1080px;
   margin: auto;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.16);
@@ -447,11 +454,21 @@ header {
   z-index: 12;
   transition: 0.2s;
 }
+header .scactive {
+  display: none;
+}
 header.headerScroll {
   height: 80px;
 }
 header.headerScroll .header_inner {
-  background: #120605;
+  background: #323d54;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
+}
+header.headerScroll .scnone {
+  display: none;
+}
+header.headerScroll .scactive {
+  display: block;
 }
 header .header_inner {
   display: flex;
@@ -463,7 +480,7 @@ header .header_inner {
   position: relative;
   padding: 5px 15px;
   transition: 0.2s;
-  background: #700d0d;
+  background: #b9ddf7;
 }
 header .header_inner div {
   max-height: 80px;
@@ -473,8 +490,8 @@ header .header_inner div {
   justify-content: flex-end;
 }
 header .header_inner div .contct_head {
-  margin-right: 12px;
-  width: 32px;
+  margin-right: 24px;
+  width: 48px;
 }
 header .header_inner a {
   max-height: 80px;
@@ -488,6 +505,22 @@ header .header_inner a img {
 }
 header .header_inner a.btn {
   max-height: 52px;
+  position: relative;
+  z-index: 2;
+  top: -6px;
+  left: -6px;
+  margin-top: 8px;
+}
+header .header_inner a.btn:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/header_btn_back.webp) no-repeat center center/contain;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: -1;
 }
 header .header_inner a.btn img {
   transition: 0.2s;
@@ -496,22 +529,11 @@ header .header_inner a.btn:hover {
   opacity: 1;
 }
 header .header_inner a.btn:hover img {
-  transform: scale(1.1);
+  transform: translate(5px, 5px);
 }
 header .header_inner a.hlogo {
-  padding: 4px 0 8px 0;
+  padding: 4px 0 8px 1em;
   height: 100%;
-}
-header .header_inner::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  display: block;
-  background: linear-gradient(45deg, #b67b03 0%, #daaf08 45%, #fee9a0 70%, #daaf08 85%, #b67b03 90% 100%);
-  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.3);
 }
 header a.hlogo:hover {
   opacity: 1;
@@ -532,8 +554,20 @@ header a.hlogo:hover {
     height: 80px;
     /*スタイルを展開したいところに記述する*/
   }
+  header.headerScroll {
+    height: 72px;
+  }
 }
 @media screen and (max-width: 591px) {
+  header {
+    height: 60px;
+  }
+  header.headerScroll {
+    height: 55px;
+  }
+  header .header_inner a.hlogo {
+    padding-left: 0;
+  }
   header .header_inner a.btn {
     width: 50%;
     height: 100%;
@@ -542,13 +576,23 @@ header a.hlogo:hover {
 }
 @media screen and (max-width: 414px) {
   header {
-    height: 60px;
+    height: 45px;
   }
   header.headerScroll {
-    height: 60px;
+    height: 42px;
   }
   header .header_inner::after {
     height: 3px;
+  }
+  header .header_inner a.btn:after {
+    top: 4px;
+    left: 4px;
+  }
+  header .header_inner a.hlogo {
+    padding: 0 0 2px 0;
+  }
+  header .header_inner a.hlogo img {
+    width: auto;
   }
 }
 
@@ -558,7 +602,7 @@ header a.hlogo:hover {
   padding: 3em 3em;
 }
 .content_wrap.attention_rule {
-  border: 2px solid #d7b266;
+  border: 2px solid #ccc;
   position: relative;
   display: flex;
   justify-content: center;
@@ -568,13 +612,21 @@ header a.hlogo:hover {
   line-height: 1.45;
   margin-bottom: 0.5em;
   font-size: clamp(16px, 2.6vw, 26px);
+  color: #323d54;
 }
 .content_wrap.attention_rule ul.ruleList li a {
-  color: yellow;
+  color: #dc728a;
+  background: #70a8c8;
   text-decoration: underline;
+}
+.content_wrap.attention_rule ul.ruleList li a.acctxt {
+  background: none;
 }
 .content_wrap.attention_rule ul.ruleList li:last-child {
   margin-bottom: 0;
+}
+.content_wrap.attention_rule ul.ruleList li .come {
+  color: white;
 }
 @media screen and (max-width: 767px) {
   .content_wrap {
@@ -592,7 +644,7 @@ header a.hlogo:hover {
 .subtit {
   position: absolute;
   top: -17px;
-  background: #120605;
+  background: #2a2d54;
   padding: 0 12px;
   display: flex;
 }
@@ -614,38 +666,39 @@ header a.hlogo:hover {
   padding: min(10%, 100px) 0;
 }
 
-main {
-  margin-top: min(10.7vw, 100px);
+.first_view {
+  position: relative;
 }
-@media screen and (max-width: 767px) {
-  main {
-    margin-top: 80px;
-    /*スタイルを展開したいところに記述する*/
-  }
-}
-@media screen and (max-width: 414px) {
-  main {
-    margin-top: 60px;
-  }
+.first_view .badge {
+  width: min(29.1%, 285px);
+  position: absolute;
+  bottom: -5%;
+  right: 20px;
+  z-index: 5;
 }
 
 #ticket {
-  background: #120605;
+  background: #2a2d54;
 }
 #ticket table {
   width: 74.36%;
-  background: #2e2c2c;
+  background: #323d54;
   margin: min(8%, 60px) auto min(10%, 85px);
-  border: 2px solid #d7b266;
+  border: 2px solid #ccc;
   font-size: clamp(20px, 3.5vw, 35px);
 }
 #ticket table tr {
   display: flex;
   justify-content: space-between;
+  border: 2px solid white;
 }
 #ticket table th {
   border-right: 1px solid #777;
-  background: #666;
+  background: #e6e6f0;
+  color: #323d54;
+}
+#ticket table td {
+  color: white;
 }
 #ticket table th,
 #ticket table td {
@@ -686,7 +739,7 @@ main {
   }
 }
 #ticket .subtit {
-  background: #120605;
+  background: #2a2d54;
 }
 
 .btn_con {
@@ -695,10 +748,57 @@ main {
   margin: auto;
   transition: 0.2s;
   animation: btn 3.5s ease infinite;
+  position: relative;
+  z-index: 2;
+  top: 0;
+  left: 0;
 }
 .btn_con:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+.btn_con::before {
+  content: "";
+  display: block;
+  width: 36%;
+  height: 60px;
+  background: url(../img/btn_before.webp) no-repeat center center/contain;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn_con:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/btn_back.webp) no-repeat center center/contain;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: -1;
+}
+@media screen and (max-width: 414px) {
+  .btn_con:after {
+    top: 6px;
+    left: 6px;
+  }
+}
+
+.link_area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.link_area .btn_area {
+  position: absolute;
+  bottom: 10%;
+}
+@media screen and (max-width: 414px) {
+  .link_area .btn_area {
+    bottom: 12%;
+  }
 }
 
 .btn_area .come {
@@ -716,7 +816,7 @@ main {
   line-height: 1.25;
 }
 .btn_area .attention-p a {
-  color: yellow;
+  color: #dc728a;
 }
 
 @media screen and (max-width: 414px) {
@@ -759,21 +859,6 @@ main {
     transform: translateX(0);
   }
 }
-.link_area {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.link_area .btn_area {
-  position: absolute;
-  bottom: 10%;
-}
-@media screen and (max-width: 414px) {
-  .link_area .btn_area {
-    bottom: 3.5%;
-  }
-}
-
 /*-----------------------------------------------------------
 header
 -----------------------------------------------------------*/
@@ -802,7 +887,7 @@ header
   line-height: 1;
 }
 .wordchoice button.active {
-  color: white;
+  color: #323d54;
 }
 .wordchoice button:hover {
   cursor: pointer;
@@ -836,11 +921,59 @@ header
 #main {
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  top: min(-10.7vw, -100px);
 }
 
+.whitezone.anm {
+  width: min(100%, 1080px);
+  height: 60px;
+  border-top: 3px solid #323d54;
+  border-bottom: 3px solid #323d54;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* 横並びの保持 */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: min(10.7vw, 100px);
+  z-index: 2;
+}
+.whitezone.anm img {
+  animation: slide 10s linear infinite;
+}
+@media screen and (max-width: 767px) {
+  .whitezone.anm {
+    top: 80px;
+    /*スタイルを展開したいところに記述する*/
+  }
+}
+@media screen and (max-width: 591px) {
+  .whitezone.anm {
+    top: 60px;
+    height: 38px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .whitezone.anm {
+    top: 45px;
+    height: 25px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .inner {
-  width: 95%;
-  max-width: 1536px;
+  width: 90%;
+  max-width: 860px;
   margin: 0 auto;
 }
 
@@ -855,8 +988,12 @@ header
   width: 100%;
 }
 
+p {
+  color: #323d54;
+}
+
 #news {
-  color: #120605;
+  color: #ffd3db;
   padding: min(5%, 50px) 0;
   border-radius: 30px 30px 0 0;
   width: 100%;
@@ -880,7 +1017,7 @@ header
   width: min(70%, 1080px);
 }
 #news .newsList li {
-  border-bottom: 1px solid #d7b266;
+  border-bottom: 1px solid #ccc;
   margin: 0;
   line-height: 1.45;
 }
@@ -907,7 +1044,7 @@ header
   padding-top: 8px;
 }
 #news .newsList li dl dd a {
-  color: #120605;
+  color: #ffd3db;
   cursor: pointer;
 }
 #news .newsList li:last-child {
@@ -1019,10 +1156,10 @@ header
 -----------------------------------------------------------*/
 footer {
   width: min(100%, 1080px);
-  padding: 0 5% min(6%, 60px);
+  padding: min(6%, 60px) 5%;
   font-weight: 400;
   font-size: 13px;
-  background: #9d1d21;
+  background: #2e2f3c;
   margin: auto;
   font-family: "Noto sans JP", sans-serif;
 }
@@ -1056,6 +1193,7 @@ footer .flex .f-body {
 footer .flex .f-body .f-txt {
   width: calc(100% - (160px + 5%));
   margin-right: 5%;
+  color: white;
 }
 footer .flex .f-body .f-info {
   display: flex;
@@ -1075,7 +1213,8 @@ footer .flex a.compbtn {
   margin: 12px 0 0;
   border-radius: 35px;
   padding: 6px 15px;
-  background: #511416;
+  background: #323d54;
+  border: 1px solid #ccc;
 }
 footer .flex a.compbtn:hover {
   background: #1a1a1a;
@@ -1083,6 +1222,7 @@ footer .flex a.compbtn:hover {
 footer .flex a.compbtn p {
   text-align: center;
   font-size: 0.8em;
+  color: white;
 }
 @media screen and (max-width: 767px) {
   footer {
@@ -1118,9 +1258,9 @@ footer .copyflex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #d7b266;
+  border-top: 1px solid #ccc;
   margin: 35px auto 0;
-  padding: 35px 7% 0;
+  padding: 35px 0 0;
 }
 footer .copyflex .copyflex-inner {
   width: 100%;
@@ -1130,15 +1270,15 @@ footer .copyflex .copyflex-inner {
 footer .copyflex .copyflex-inner a.copypp {
   display: block;
   text-align: right;
-  color: #f07c80;
+  color: #e6e6f0;
 }
 footer .copyflex .copyflex-inner a.copypp.asct {
   margin-right: 1.5em;
 }
 footer .copyflex p.copyright {
-  width: 33%;
+  width: 21em;
   text-align: left;
-  color: #f07c80;
+  color: #e6e6f0;
   font-size: 13px;
   line-height: 1;
   margin-right: 2em;
@@ -1202,35 +1342,47 @@ footer .snsList li a {
   place-content: center;
 }
 
-.howtoplay .btn_area {
-  padding-left: 10%;
-  padding-right: 2%;
-  bottom: 14%;
+.lp_con {
+  padding: min(8%, 80px) 0;
 }
-.howtoplay .btn_area.acc {
-  width: 78%;
-  bottom: 10%;
+.lp_con.deco {
+  background: url(../img/bg_con.webp) no-repeat center center/cover;
 }
-.howtoplay .btn_area.acc .accLink {
-  border: 2px solid white;
-  margin-top: 30px;
+
+.howtoplay .link_area .btn_area {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: min(8%, 80px);
+}
+.howtoplay .link_area .btn_area.acc {
+  width: 100%;
+  bottom: 17%;
+}
+.howtoplay .link_area .btn_area.acc .accLink {
   padding: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.2s;
 }
-.howtoplay .btn_area.acc .accLink:hover {
-  background: #511416;
+.howtoplay .link_area .btn_area.acc .accLink img {
+  transition: 0.2s;
 }
-.howtoplay .btn_area.acc img {
+.howtoplay .link_area .btn_area.acc img {
   max-height: 32px;
 }
 @media screen and (max-width: 1000px) {
-  .howtoplay .btn_area.acc {
+  .howtoplay .link_area .btn_area.acc {
     display: none;
     /*スタイルを展開したいところに記述する*/
   }
+}
+.howtoplay .itemdiv {
+  margin-bottom: min(6%, 60px);
+}
+.howtoplay .link_area.gomap:hover .accLink img {
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 
 a.area {
@@ -1247,7 +1399,7 @@ a.area {
 }
 
 .obi_con {
-  background: #120605;
+  background: #ffd3db;
   padding: 1em;
 }
 .obi_con p {
@@ -1264,14 +1416,14 @@ a.area {
   text-decoration: underline;
 }
 .obi_con p.attention-p span a {
-  color: yellow;
+  color: #dc728a;
 }
 .obi_con p.come {
   font-size: clamp(15px, 1.8vw, 18px);
   margin-bottom: 1.5em;
 }
 .obi_con p.come a {
-  color: yellow;
+  color: #dc728a;
 }
 .obi_con p.come .i-text {
   font-size: 0.7em;
@@ -1282,94 +1434,20 @@ a.area {
   }
 }
 
-/*アコーディオン*/
-.accordion-area {
-  list-style: none;
-  width: min(85%, 960px);
-  margin: min(6%, 60px) auto 0;
-  color: white;
+.content03 {
+  margin: min(10%, 100px) 0 20px;
 }
-.accordion-area li.accarea-item {
-  border: 2px solid #d7b266;
-  margin-bottom: 35px;
-  /*アコーディオンタイトル*/
+
+.cta .btn_area {
+  margin-top: min(5%, 50px);
 }
-@media screen and (max-width: 767px) {
-  .accordion-area li.accarea-item {
-    margin-bottom: 12px;
-    /*スタイルを展開したいところに記述する*/
-  }
-}
-.accordion-area li.accarea-item .acctitle {
-  position: relative; /*+マークの位置基準とするためrelative指定*/
-  cursor: pointer;
-  padding: 12px 42px 12px 3%;
-  transition: all 0.5s ease;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: clamp(16px, 2.3vw, 23px);
+.cta .btn_att {
+  width: 60%;
+  margin: 20px auto 0;
 }
 @media screen and (max-width: 414px) {
-  .accordion-area li.accarea-item .acctitle {
-    padding: 12px 42px 12px 6%;
-  }
-}
-.accordion-area li.accarea-item .acctitle p {
-  color: #ffe6b3;
-  position: relative;
-  font-family: "noto serif JP", serif;
-  font-weight: 600;
-}
-.accordion-area li.accarea-item .acctitle p::before {
-  content: "Q.";
-  font-size: 1.2em;
-  margin-right: 0.6em;
-  color: #d5cf8e;
-  font-family: "Cinzel", serif;
-  font-weight: 300;
-}
-.accordion-area li.accarea-item .acctitle:after {
-  /*アイコンの＋と×*/
-  content: "";
-  position: absolute;
-  display: block;
-  background: url(../img/icon_arrow.webp) no-repeat center center/contain;
-  width: 24px;
-  height: 24px;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 20px;
-  transition: 0.2s;
-}
-.accordion-area li.accarea-item .acctitle.close::after {
-  /*　closeというクラスがついたら形状変化　*/
-  transform: translateY(-50%) rotate(180deg);
-}
-.accordion-area li.accarea-item .accbox {
-  /*アコーディオンで現れるエリア*/
-  display: none;
-  padding: 0 1.5em 2%;
-  color: white;
-  font-family: "Noto serif JP", serif;
-}
-.accordion-area li.accarea-item .accbox li {
-  font-size: clamp(16px, 2.3vw, 23px);
-}
-.accordion-area li.accarea-item .accbox p {
-  position: relative;
-}
-.accordion-area li.accarea-item .accbox p::before {
-  content: "A.";
-  margin-right: 0.6em;
-  color: #d7b266;
-}
-@media screen and (max-width: 591px) {
-  .accordion-area {
-    width: 90%;
-  }
-  .accordion-area li.accarea-item {
-    margin-bottom: 12px;
+  .cta .btn_att {
+    width: 80%;
   }
 }
 
@@ -1442,9 +1520,17 @@ a.area {
   text-align: center;
 }
 
+#ticket .attention_rule {
+  border: 2px solid white;
+}
+#ticket .attention_rule ul li {
+  color: #ffd3db;
+}
+#ticket .content_wrap {
+  margin-bottom: 0;
+}
+
 .ticketrule_area {
-  background: #d7b266;
-  color: #1a1a1a;
   margin: 0 auto 0.5em;
   border-radius: 3px;
 }
@@ -1456,8 +1542,9 @@ a.area {
 }
 .ticketrule_area a p {
   font-size: clamp(16px, 2vw, 20px);
-  color: #700d0d !important;
+  color: #323d54 !important;
   position: relative;
+  letter-spacing: 0.4;
 }
 .ticketrule_area a p::after {
   content: "";
@@ -1471,6 +1558,119 @@ a.area {
   transform: translateY(-50%);
 }
 
+#faq {
+  padding: 0 0 min(8%, 80px);
+  background: #2a2d54;
+}
+
+/*アコーディオン*/
+.accordion-area {
+  list-style: none;
+  width: min(85%, 960px);
+  margin: min(6%, 60px) auto 0;
+  color: #323d54;
+}
+.accordion-area li.accarea-item {
+  margin-bottom: 35px;
+  /*アコーディオンタイトル*/
+}
+@media screen and (max-width: 767px) {
+  .accordion-area li.accarea-item {
+    margin-bottom: 12px;
+    /*スタイルを展開したいところに記述する*/
+  }
+}
+.accordion-area li.accarea-item .acctitle {
+  position: relative; /*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  padding: 0.7em 42px 12px 3%;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: clamp(16px, 2.3vw, 23px);
+  background: white;
+}
+@media screen and (max-width: 414px) {
+  .accordion-area li.accarea-item .acctitle {
+    padding: 12px 42px 12px 6%;
+  }
+}
+.accordion-area li.accarea-item .acctitle p {
+  color: #323d54;
+  position: relative;
+  font-weight: 600;
+  padding-left: 2em;
+  line-height: 1.45;
+}
+.accordion-area li.accarea-item .acctitle p::before {
+  content: "";
+  background: url(../img/icon_Q.webp) no-repeat center center/contain;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.6em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.accordion-area li.accarea-item .acctitle:after {
+  /*アイコンの＋と×*/
+  content: "";
+  position: absolute;
+  display: block;
+  background: url(../img/icon_arrow.webp) no-repeat center center/contain;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  transition: 0.2s;
+}
+.accordion-area li.accarea-item .acctitle.close::after {
+  /*　closeというクラスがついたら形状変化　*/
+  transform: translateY(-50%) rotate(180deg);
+}
+.accordion-area li.accarea-item .accbox {
+  /*アコーディオンで現れるエリア*/
+  display: none;
+  padding: 0.8em 1.5em 2%;
+  background: #e6e6f0;
+}
+.accordion-area li.accarea-item .accbox li {
+  font-size: clamp(16px, 2.3vw, 23px);
+}
+.accordion-area li.accarea-item .accbox p {
+  position: relative;
+  color: #6679a1;
+  padding-left: 1.7em;
+  line-height: 1.45;
+}
+.accordion-area li.accarea-item .accbox p::before {
+  content: "";
+  background: url(../img/icon_A.webp) no-repeat center center/contain;
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.6em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+@media screen and (max-width: 591px) {
+  .accordion-area {
+    width: 90%;
+  }
+  .accordion-area li.accarea-item {
+    margin-bottom: 12px;
+  }
+}
+
+#access {
+  background: #ffd3db;
+}
 #access .content_wrap {
   padding: 0;
   margin: 40px auto 0;
@@ -1478,6 +1678,7 @@ a.area {
 }
 #access .flex .txt {
   width: 40.41%;
+  color: #323d54;
 }
 #access .flex .txt dl {
   display: none;
@@ -1610,7 +1811,7 @@ a.area {
     padding-bottom: min(8%, 60px);
   }
   .gnav .gnav__wrap .gnav__menu .gnav__menu__item a {
-    color: white;
+    color: #323d54;
     font-size: 15px;
     font-weight: 700;
     padding: 0;

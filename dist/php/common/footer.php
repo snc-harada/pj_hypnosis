@@ -16,4 +16,4 @@
                         스타리나이트 컴퍼니
                     </p> --><!-- <p class="tel">
                         TEL:<a href="tel:078-600-2422">078-600-2422</a>
-                    </p> --> <a href="https://www.snc-jp.com/" target="_blank" class="compbtn"><p>OFFICIAL SITE</p></a></div></div></div><div class="flex copyflex"><p class="copyright">©催眠術2025</p><div class="copyflex-inner"><a href="./pdf/asct.pdf" class="copypp asct" target="_blank">特定商取引法について</a> <a href="./pdf/privacy_policy.pdf" class="copypp" target="_blank">プライバシーポリシー</a></div></div></div></footer>
+                    </p> --> <a href="https://www.snc-jp.com/" target="_blank" class="compbtn"><p>OFFICIAL SITE</p></a></div></div></div><div class="flex copyflex"><p class="copyright">©リアル検証催眠体験2025</p><div class="copyflex-inner"><a href="./pdf/asct.pdf" class="copypp asct" target="_blank">特定商取引法について</a> <a href="./pdf/privacy_policy.pdf" class="copypp" target="_blank">プライバシーポリシー</a></div></div></div></footer>
