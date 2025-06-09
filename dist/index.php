@@ -2,20 +2,11 @@
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 header("Pragma: no-cache");
 header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
-?> <!doctype html><html lang="ja"><head><meta charset="UTF-8"><title>リアル検証催眠体験2025 | 神戸三宮で楽しめる催眠術イベント！</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="神戸で話題の催眠術イベント開催！プロの催眠術師があなたの潜在意識にアプローチ。驚きと笑いが詰まった体験型イベントを今すぐチェック！"><!-- Google Tag Manager --><script>(function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-W85QDHL7');</script><!-- End Google Tag Manager --><!-- OGP --><meta property="og:type" content="website"><meta property="og:title" content="リアル検証催眠体験2025 | 神戸三宮で楽しめる催眠術イベント！"><meta property="og:site_name" content="リアル検証催眠体験2025 | 神戸三宮で楽しめる催眠術イベント！"><meta property="og:url" content="https://www.starrynightcompany.com/hypnospace/"><!-- サイトURL --><meta property="og:image" content="https://www.starrynightcompany.com/hypnospace/img/ogp.webp?v=2"><!-- 1200x630推奨 --><meta property="og:description" content="神戸で話題の催眠術イベント開催！プロの催眠術師があなたの潜在意識にアプローチ。驚きと笑いが詰まった体験型イベントを今すぐチェック！"><!-- 神戸 催眠術 イベント 体験
+?> <!doctype html><html lang="ja"><head><meta charset="UTF-8"><title>リアル検証催眠体験2025 | 神戸三宮で楽しめる催眠術イベント！</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="神戸で話題の催眠術イベント開催！プロの催眠術師があなたの潜在意識にアプローチ。驚きと笑いが詰まった体験型イベントを今すぐチェック！"><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PZKRSGFM');</script><!-- End Google Tag Manager --><!-- OGP --><meta property="og:type" content="website"><meta property="og:title" content="リアル検証催眠体験2025 | 神戸三宮で楽しめる催眠術イベント！"><meta property="og:site_name" content="リアル検証催眠体験2025 | 神戸三宮で楽しめる催眠術イベント！"><meta property="og:url" content="https://www.starrynightcompany.com/hypnospace/"><!-- サイトURL --><meta property="og:image" content="https://www.starrynightcompany.com/hypnospace/img/ogp.webp?v=2"><!-- 1200x630推奨 --><meta property="og:description" content="神戸で話題の催眠術イベント開催！プロの催眠術師があなたの潜在意識にアプローチ。驚きと笑いが詰まった体験型イベントを今すぐチェック！"><!-- 神戸 催眠術 イベント 体験
     神戸 催眠術師 パフォーマンス
     催眠術 ショー 関西 おすすめ
     初めての催眠術 イベント 神戸
@@ -27,7 +18,7 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
             $('.scroll-pane').jScrollPane({
                 showArrows: true
             });
-        });</script></head><body id="pTop" class="website" data-responsejs='{"create":[{"prop":"width","prefix":"src","lazy":true,"breakpoints":[0,592,1001]}]}'><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W85QDHL7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) --><!-- header --> <?php include('./php/common/header_lp.php'); ?> <main><div class="whitezone anm"><img src="./img/top_deco.webp" alt="チャレンジャー募集中01"><img src="./img/top_deco.webp" alt="チャレンジャー募集中02"></div><div class="first_view"><h1><img src="./img/fv.webp?v=3" alt="リアル検証催眠体験2025ー神戸三宮から徒歩10分！催眠術イベントが体験できる新感覚エンターテイメント！"></h1><!-- <div class="badge">
+        });</script></head><body id="pTop" class="website" data-responsejs='{"create":[{"prop":"width","prefix":"src","lazy":true,"breakpoints":[0,592,1001]}]}'><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZKRSGFM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) --><!-- header --> <?php include('./php/common/header_lp.php'); ?> <main><div class="whitezone anm"><img src="./img/top_deco.webp" alt="チャレンジャー募集中01"><img src="./img/top_deco.webp" alt="チャレンジャー募集中02"></div><div class="first_view"><h1><img src="./img/fv.webp?v=3" alt="リアル検証催眠体験2025ー神戸三宮から徒歩10分！催眠術イベントが体験できる新感覚エンターテイメント！"></h1><!-- <div class="badge">
                 <img src="./img/badge.webp" alt="神戸三宮から徒歩10分">
             </div> --></div><!-- <div class="obi_con"> --><!-- <p class="attention-p red">※ご盛況につき、3月8日〜3月31日までの<span class="i-text">当日券はございません。</span></p> --><!-- <p class="come">4月開催分のチケット販売が決定しました！<span class="i-text">【3/11(火) 販売開始予定】(25.3.7更新)</span></p> --><!-- <p class="come">4月開催分のチケット販売開始！<span class="i-text">(25.3.11更新)</span></p> --><!-- <p class="attention-p">会場にて当日券発売中！</p>
             <p class="come">※当日券情報は<a href="https://x.com/NandemoCompany" target="_blank">@NandemoCompany</a>にてご確認ください</p>
