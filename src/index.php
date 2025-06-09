@@ -36,8 +36,8 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
     <meta property="og:type" content="website">
     <meta property="og:title" content="催眠術2025">
     <meta property="og:site_name" content="催眠術2025">
-    <meta property="og:url" content="https://www.starrynightcompany.com/pj_hypnosis/"><!-- サイトURL -->
-    <meta property="og:image" content="https://www.starrynightcompany.com/pj_hypnosis/img/ogp.webp?v=2"><!-- 1200x630推奨 -->
+    <meta property="og:url" content="https://www.starrynightcompany.com/hypnospace/"><!-- サイトURL -->
+    <meta property="og:image" content="https://www.starrynightcompany.com/hypnospace/img/ogp.webp?v=2"><!-- 1200x630推奨 -->
     <meta property="og:description" content="神戸で話題の催眠術イベント開催！プロの催眠術師があなたの潜在意識にアプローチ。驚きと笑いが詰まった体験型イベントを今すぐチェック！">
     <!-- 神戸 催眠術 イベント 体験
     神戸 催眠術師 パフォーマンス
@@ -50,9 +50,9 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
     <!-- X (Twitter) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@NandemoCompany">
-    <meta name="twitter:title" content="催眠術2025">
+    <meta name="twitter:title" content="アル検証催眠体験2025 | 神戸三宮で楽しめる催眠術イベント！">
     <meta name="twitter:description" content="神戸で話題の催眠術イベント開催！プロの催眠術師があなたの潜在意識にアプローチ。驚きと笑いが詰まった体験型イベントを今すぐチェック！">
-    <meta name="twitter:image" content="https://starrynightcompany.com/pj_hypnosis/img/ogp.webp?v=2">
+    <meta name="twitter:image" content="https://www.starrynightcompany.com/hypnospace/img/ogp.webp?v=2">
 
     <!-- robots（本番環境で index, follow に変更） -->
     <meta name="robots" content="index, follow">

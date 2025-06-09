@@ -3,14 +3,13 @@
 
 <!--  created with free sitemap generation system www.sitemapxml.jp  --> 
 <url>
-  <loc>https://starrynightcompany.com/RatingChallenge/</loc>
+  <loc>https://www.starrynightcompany.com/hypnospace/</loc>
   <priority>1.0</priority>
-  <changefreq>always</changefreq>
 </url>
 <url>
-  <loc>https://starrynightcompany.com/RatingChallenge/pdf/ticket_rule.pdf</loc>
+  <loc>https://www.starrynightcompany.com/hypnospace/pdf/ticket_rule.pdf</loc>
   <priority>0.8</priority>
-  <changefreq>always</changefreq>
+  <lastmod>2025-06-09T15:54:33+09:00</lastmod>
 </url>
 
 </urlset>
