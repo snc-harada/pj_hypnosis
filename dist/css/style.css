@@ -422,7 +422,9 @@ body::before {
   width: 100vw;
   height: 100vh;
   display: block;
-  background: url(../img/bg.webp) repeat;
+  background: url(../img/bg.jpg) repeat;
+  mix-blend-mode: overlay;
+  opacity: 0.6;
   position: fixed;
   top: 0;
   left: 0;
@@ -431,7 +433,7 @@ body::before {
 
 main {
   background: #ffd3db;
-  max-width: 1080px;
+  max-width: 860px;
   margin: auto;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.16);
 }
@@ -445,7 +447,7 @@ main {
 header {
   width: 100%;
   position: fixed;
-  height: min(10.7vw, 100px);
+  height: min(10.7vw, 90px);
   top: 0;
   left: 0;
   display: flex;
@@ -474,7 +476,7 @@ header .header_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: min(100%, 1080px);
+  width: min(100%, 860px);
   height: 100%;
   margin: auto;
   position: relative;
@@ -926,7 +928,7 @@ header
 }
 
 .whitezone.anm {
-  width: min(100%, 1080px);
+  width: min(100%, 860px);
   height: 60px;
   border-top: 3px solid #323d54;
   border-bottom: 3px solid #323d54;
@@ -938,7 +940,7 @@ header
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: min(10.7vw, 100px);
+  top: min(10.7vw, 90px);
   z-index: 2;
 }
 .whitezone.anm img {
@@ -1155,8 +1157,8 @@ p {
  footer
 -----------------------------------------------------------*/
 footer {
-  width: min(100%, 1080px);
-  padding: min(6%, 60px) 5%;
+  width: min(100%, 860px);
+  padding: min(6%, 60px) 3%;
   font-weight: 400;
   font-size: 13px;
   background: #2e2f3c;
