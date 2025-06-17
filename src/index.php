@@ -124,7 +124,7 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
                     <div class="link_area itemdiv fade">
                         <img src="./img/con02_01.webp" alt="01.チケットを購入する">
                         <div class="btn_area">
-                            <a href="./" class="btn_con jump_to_ticket" target="_blank"><img src="./img/btn.webp" alt="01.チケットのご予約はこちら"></a>
+                            <a href="https://www.snc-jp.com/booking-calendar/hypnospace" class="btn_con jump_to_ticket" target="_blank"><img src="./img/btn.webp" alt="01.チケットのご予約はこちら"></a>
                             <!-- <p class="come attention-p">※会場にて当日券発売中！<br><span class="i-text">※当日券情報は<a href="https://x.com/NandemoCompany" target="_blank">@NandemoCompany</a>にてご確認ください</span></p> -->
                         </div>
                     </div>
@@ -149,7 +149,7 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
                     </div>
                 </div>
                 <div class="btn_area">
-                    <a href="https://www.snc-jp.com/booking-calendar" class="btn_con jump_to_ticket" target="_blank"><img src="./img/btn.webp" alt="チケットのご予約はこちら"></a>
+                    <a href="https://www.snc-jp.com/booking-calendar/hypnospace" class="btn_con jump_to_ticket" target="_blank"><img src="./img/btn.webp" alt="チケットのご予約はこちら"></a>
                     <p class="btn_att"><img src="./img/ticket_att.webp" alt="※お一人様につき、１枚チケットが必要です。※参加人数により、販売できない可能性がございます。"></p>
                     <!-- <p class="come attention-p">※会場にて当日券発売中！<br><span class="i-text">※当日券情報は<a href="https://x.com/NandemoCompany" target="_blank">@NandemoCompany</a>にてご確認ください</span></p> -->
                 </div>

@@ -69,6 +69,10 @@
 /*-----------------------------------------------------------
 全体スタイル
 -----------------------------------------------------------*/
+html {
+  overflow-x: hidden;
+}
+
 body {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -567,10 +571,10 @@ header a.hlogo:hover {
 }
 @media screen and (max-width: 591px) {
   header {
-    height: 60px;
+    height: 68px;
   }
   header.headerScroll {
-    height: 55px;
+    height: 60px;
   }
   header .header_inner a.hlogo {
     padding-left: 0;
@@ -583,10 +587,10 @@ header a.hlogo:hover {
 }
 @media screen and (max-width: 414px) {
   header {
-    height: 50px;
+    height: 58px;
   }
   header.headerScroll {
-    height: 45px;
+    height: 50px;
   }
   header .header_inner::after {
     height: 3px;
@@ -959,13 +963,13 @@ header
 }
 @media screen and (max-width: 591px) {
   .whitezone.anm {
-    top: 60px;
+    top: 68px;
     height: 38px;
   }
 }
 @media screen and (max-width: 414px) {
   .whitezone.anm {
-    top: 50px;
+    top: 58px;
     height: 25px;
   }
 }
@@ -1714,7 +1718,7 @@ a.area {
 @media screen and (max-width: 591px) {
   #access .flex {
     flex-direction: column;
-    width: 80%;
+    width: 84.25%;
   }
   #access .flex .txt {
     width: 95%;

@@ -90,11 +90,11 @@ header
     top: 80px;
   }
   @include mid {
-    top: 60px;
+    top: 68px;
     height: 38px;
   }
   @include sp {
-    top: 50px;
+    top: 58px;
     height: 25px;
   }
 }
@@ -809,7 +809,7 @@ a.area {
     }
     @include mid {
       flex-direction: column;
-      width: 80%;
+      width: 84.25%;
       .txt {
         width: 95%;
         img {

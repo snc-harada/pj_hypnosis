@@ -119,6 +119,9 @@ $base-hlink: #aaa;
 /*-----------------------------------------------------------
 全体スタイル
 -----------------------------------------------------------*/
+html {
+  overflow-x: hidden;
+}
 body {
   // スマホやタブレットでの勝手な文字サイズ変更を防ぐ
   -webkit-text-size-adjust: 100%;
@@ -565,9 +568,9 @@ header {
     }
   }
   @include mid {
-    height: 60px;
+    height: 68px;
     &.headerScroll {
-      height: 55px;
+      height: 60px;
     }
     .header_inner a.hlogo {
       padding-left: 0;
@@ -579,9 +582,9 @@ header {
     }
   }
   @include sp {
-    height: 50px;
+    height: 58px;
     &.headerScroll {
-      height: 45px;
+      height: 50px;
     }
     .header_inner::after {
       height: 3px;
