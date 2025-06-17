@@ -73,7 +73,7 @@ body {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-size: min(3.2vw, 32px);
+  font-size: clamp(14px, 1.7vw, 17px);
   letter-spacing: 0.05em;
   line-height: 1.6;
   position: relative;
@@ -297,7 +297,7 @@ PCサイズ
   letter-spacing: 0.1em;
 }
 .mainTit img {
-  max-height: 10.5vw;
+  height: min(7vw, 60px);
   max-width: 92%;
 }
 
@@ -433,7 +433,7 @@ body::before {
 
 main {
   background: #ffd3db;
-  max-width: 860px;
+  max-width: 780px;
   margin: auto;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.16);
 }
@@ -476,7 +476,7 @@ header .header_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: min(100%, 860px);
+  width: min(100%, 780px);
   height: 100%;
   margin: auto;
   position: relative;
@@ -494,6 +494,11 @@ header .header_inner div {
 header .header_inner div .contct_head {
   margin-right: 24px;
   width: 48px;
+}
+@media screen and (max-width: 414px) {
+  header .header_inner div .contct_head {
+    width: 40px;
+  }
 }
 header .header_inner a {
   max-height: 80px;
@@ -578,10 +583,10 @@ header a.hlogo:hover {
 }
 @media screen and (max-width: 414px) {
   header {
-    height: 45px;
+    height: 50px;
   }
   header.headerScroll {
-    height: 42px;
+    height: 45px;
   }
   header .header_inner::after {
     height: 3px;
@@ -600,8 +605,8 @@ header a.hlogo:hover {
 
 .content_wrap {
   width: 74.36%;
-  margin: 40px auto min(8vw, 100px);
-  padding: 3em 3em;
+  margin: min(8%, 80px) auto min(8vw, 100px);
+  padding: 3em 2em 2em;
 }
 .content_wrap.attention_rule {
   border: 2px solid #ccc;
@@ -685,7 +690,7 @@ header a.hlogo:hover {
 #ticket table {
   width: 74.36%;
   background: #323d54;
-  margin: min(8%, 60px) auto min(10%, 85px);
+  margin: min(8%, 60px) auto 1em;
   border: 2px solid #ccc;
   font-size: clamp(20px, 3.5vw, 35px);
 }

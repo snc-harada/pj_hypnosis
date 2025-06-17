@@ -73,7 +73,7 @@ body {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-size: min(3.2vw, 32px);
+  font-size: clamp(14px, 1.7vw, 17px);
   letter-spacing: 0.05em;
   line-height: 1.6;
   position: relative;
@@ -297,7 +297,7 @@ PCサイズ
   letter-spacing: 0.1em;
 }
 .mainTit img {
-  max-height: 10.5vw;
+  height: min(7vw, 60px);
   max-width: 92%;
 }
 
@@ -433,7 +433,7 @@ body::before {
 
 main {
   background: #ffd3db;
-  max-width: 860px;
+  max-width: 780px;
   margin: auto;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.16);
 }
@@ -476,7 +476,7 @@ header .header_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: min(100%, 860px);
+  width: min(100%, 780px);
   height: 100%;
   margin: auto;
   position: relative;
@@ -494,6 +494,11 @@ header .header_inner div {
 header .header_inner div .contct_head {
   margin-right: 24px;
   width: 48px;
+}
+@media screen and (max-width: 414px) {
+  header .header_inner div .contct_head {
+    width: 40px;
+  }
 }
 header .header_inner a {
   max-height: 80px;
@@ -578,10 +583,10 @@ header a.hlogo:hover {
 }
 @media screen and (max-width: 414px) {
   header {
-    height: 45px;
+    height: 50px;
   }
   header.headerScroll {
-    height: 42px;
+    height: 45px;
   }
   header .header_inner::after {
     height: 3px;
@@ -600,8 +605,8 @@ header a.hlogo:hover {
 
 .content_wrap {
   width: 74.36%;
-  margin: 40px auto min(8vw, 100px);
-  padding: 3em 3em;
+  margin: min(8%, 80px) auto min(8vw, 100px);
+  padding: 3em 2em 2em;
 }
 .content_wrap.attention_rule {
   border: 2px solid #ccc;
@@ -685,7 +690,7 @@ header a.hlogo:hover {
 #ticket table {
   width: 74.36%;
   background: #323d54;
-  margin: min(8%, 60px) auto min(10%, 85px);
+  margin: min(8%, 60px) auto 1em;
   border: 2px solid #ccc;
   font-size: clamp(20px, 3.5vw, 35px);
 }
@@ -928,7 +933,7 @@ header
 }
 
 .whitezone.anm {
-  width: min(100%, 860px);
+  width: min(100%, 780px);
   height: 60px;
   border-top: 3px solid #323d54;
   border-bottom: 3px solid #323d54;
@@ -960,7 +965,7 @@ header
 }
 @media screen and (max-width: 414px) {
   .whitezone.anm {
-    top: 45px;
+    top: 50px;
     height: 25px;
   }
 }
@@ -975,7 +980,7 @@ header
 }
 .inner {
   width: 90%;
-  max-width: 860px;
+  max-width: 645px;
   margin: 0 auto;
 }
 
@@ -1157,7 +1162,7 @@ p {
  footer
 -----------------------------------------------------------*/
 footer {
-  width: min(100%, 860px);
+  width: min(100%, 780px);
   padding: min(6%, 60px) 3%;
   font-weight: 400;
   font-size: 13px;
@@ -1170,6 +1175,8 @@ footer .flex {
 }
 footer .flex .f-head {
   margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
 }
 footer .flex .f-head .f-logo {
   width: 165px;
@@ -1190,7 +1197,7 @@ footer .flex .f-head .f-logo img {
 footer .flex .f-body {
   width: 65%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 footer .flex .f-body .f-txt {
   width: calc(100% - (160px + 5%));
@@ -1337,6 +1344,11 @@ footer .snsList {
 footer .snsList li {
   padding: 20px;
 }
+@media screen and (max-width: 414px) {
+  footer .snsList li {
+    padding: 1em;
+  }
+}
 footer .snsList li a {
   width: 25px;
   height: 25px;
@@ -1445,7 +1457,7 @@ a.area {
 }
 .cta .btn_att {
   width: 60%;
-  margin: 20px auto 0;
+  margin: min(5%, 35px) auto 0;
 }
 @media screen and (max-width: 414px) {
   .cta .btn_att {
@@ -1530,6 +1542,17 @@ a.area {
 }
 #ticket .content_wrap {
   margin-bottom: 0;
+}
+#ticket .come {
+  font-size: clamp(13px, 1.5vw, 15px);
+  color: white;
+  width: 74.36%;
+  margin: auto;
+}
+@media screen and (max-width: 591px) {
+  #ticket .come {
+    width: 85%;
+  }
 }
 
 .ticketrule_area {

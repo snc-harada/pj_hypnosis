@@ -68,7 +68,7 @@ header
 //   top: min(-10.7vw, -100px);
 // }
 .whitezone.anm {
-  width: min(100%, 860px);
+  width: min(100%, 780px);
   height: 60px;
   border-top: 3px solid $base-font;
   border-bottom: 3px solid $base-font;
@@ -94,7 +94,7 @@ header
     height: 38px;
   }
   @include sp {
-    top: 45px;
+    top: 50px;
     height: 25px;
   }
 }
@@ -108,7 +108,7 @@ header
 }
 .inner {
   width: 90%;
-  max-width: 860px;
+  max-width: 645px;
   margin: 0 auto;
 }
 .inner12 {
@@ -280,7 +280,7 @@ p {
 -----------------------------------------------------------*/
 
 footer {
-  width: min(100%, 860px);
+  width: min(100%, 780px);
   padding: min(6%, 60px) 3%;
   font-weight: 400;
   font-size: 13px;
@@ -291,6 +291,8 @@ footer {
     justify-content: center;
     .f-head {
       margin-right: 5%;
+      display: flex;
+      justify-content: space-between;
       .f-logo {
         width: 165px;
         margin: auto;
@@ -308,7 +310,7 @@ footer {
     .f-body {
       width: 65%;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       .f-txt {
         width: calc(100% - (160px + 5%));
         margin-right: 5%;
@@ -444,6 +446,9 @@ footer {
     margin-top: min(6%, 60px);
     li {
       padding: 20px;
+      @include sp {
+        padding: 1em;
+      }
       a {
         width: 25px;
         height: 25px;
@@ -559,7 +564,7 @@ a.area {
   }
   .btn_att {
     width: 60%;
-    margin: 20px auto 0;
+    margin: min(5%, 35px) auto 0;
     @include sp {
       width: 80%;
     }
@@ -636,6 +641,15 @@ a.area {
   }
   .content_wrap {
     margin-bottom: 0;
+  }
+  .come {
+    font-size: clamp(13px, 1.5vw, 15px);
+    color: $base-white;
+    width: 74.36%;
+    margin: auto;
+    @include mid {
+      width: 85%;
+    }
   }
 }
 .ticketrule_area {

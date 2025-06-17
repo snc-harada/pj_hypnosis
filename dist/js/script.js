@@ -162,6 +162,27 @@ $(function () {
   });
   new ScrollFadeIn();
 });
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
+  var boxes = document.querySelectorAll(".fade:not(.active)");
+  boxes.forEach(function (box) {
+    gsap.fromTo(box, {
+      opacity: 0,
+      y: 30
+    }, {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: box,
+        start: "top 80%",
+        // 画面の80%下あたりで発火
+        toggleActions: "play none none none" // 一度だけ実行
+      }
+    });
+  });
+});
 
 // アコーディオンをクリックした時の動作
 document.querySelectorAll(".acctitle").forEach(function (elem) {
