@@ -316,7 +316,7 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
             </div>
         </section>
         <section class="cooperation">
-            <a href="https://saimin-academy.com">日本催眠術アカデミー</a>
+            <a href="https://saimin-academy.com" target="_blank">日本催眠術アカデミー</a>
         </section>
         <!-- <table>
                 <tr>
