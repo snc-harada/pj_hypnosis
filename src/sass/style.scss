@@ -828,6 +828,41 @@ a.area {
   }
 }
 
+.cooperation {
+  padding: clamp(35px, 8%, 100px) 0 30px;
+  background: $base-con;
+  text-align: center;
+  a {
+    width: min(80%, 280px);
+    display: block;
+    color: white;
+    border: 1px solid white;
+    padding: 1.3em 2.5em;
+    margin: min(5%, 35px) auto 0;
+    position: relative;
+    transition: 0.2s;
+    &:hover {
+      color: $base-acc;
+      background: white;
+      &::after {
+        background: url(../img/common/arrow.svg) no-repeat center center/contain;
+        transform: translate(6px, -50%);
+      }
+    }
+    &::after {
+      content: "";
+      width: 0.8em;
+      height: 1em;
+      background: url(../img/common/arrow_w.svg) no-repeat center center/contain;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 1em;
+      transition: 0.2s;
+    }
+  }
+}
+
 /*-- 固定ここまで --*/
 
 /* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */

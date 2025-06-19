@@ -47,12 +47,12 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
     <meta name="robots" content="index, follow">
 
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="./img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg">
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="MyWebSite">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
 
     <!-- Google Fonts -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -139,10 +139,10 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
                     <div class="itemdiv fade"><img src="./img/con02_04.webp" alt="04.検証スタート"></div>
                 </section>
             </div>
-            <section class="content03 fade">
+            <div class="content03 fade">
                 <img src="./img/con03.webp" alt="体験の様子も撮影できる！">
-            </section>
-            <article class="cta fade">
+            </div>
+            <div class="cta fade">
                 <div class="inner">
                     <div class="itemdiv">
                         <img src="./img/con04.webp" alt="チケットはWEB購入がお得！">
@@ -153,7 +153,7 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
                     <p class="btn_att"><img src="./img/ticket_att.webp" alt="※お一人様につき、１枚チケットが必要です。※参加人数により、販売できない可能性がございます。"></p>
                     <!-- <p class="come attention-p">※会場にて当日券発売中！<br><span class="i-text">※当日券情報は<a href="https://x.com/NandemoCompany" target="_blank">@NandemoCompany</a>にてご確認ください</span></p> -->
                 </div>
-            </article>
+            </div>
 
             <!-- ゲームの注意事項 -->
             <!-- <div class="attention_rule content_wrap">
@@ -315,29 +315,31 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3860304124696!2d135.19556625785887!3d34.69544211389622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008ef1f0381a27%3A0x7ef86d3d5213b009!2z44CSNjUxLTAwODgg5YW15bqr55yM56We5oi45biC5Lit5aSu5Yy65bCP6YeO5p-E6YCa77yT5LiB55uu77yS4oiS77yS77yTIOWKoOiXpOS4ieWuruODk-ODqw!5e0!3m2!1sja!2sjp!4v1739427180226!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="加藤三宮ビル2F会場"></iframe>
             </div>
         </section>
+        <section class="cooperation">
+            <a href="https://saimin-academy.com">日本催眠術アカデミー</a>
+        </section>
         <!-- <table>
-        <tr>
-            <th>開催日時</th>
-            <td>
-                【京都】<br>2024年7月13日(土)〜15日(月)
-            </td>
-        </tr>
-        <tr>
-            <th>会場</th>
-            <td>
-                【京都】<br>城陽五里五里の丘
-            </td>
-        </tr>
-        <tr>
-            <th>主催/企画/制作</th>
-            <td>
-                株式会社スターリーナイトカンパニー
-            </td>
-        </tr>
-    </table> -->
+                <tr>
+                    <th>開催日時</th>
+                    <td>
+                        【京都】<br>2024年7月13日(土)〜15日(月)
+                    </td>
+                </tr>
+                <tr>
+                    <th>会場</th>
+                    <td>
+                        【京都】<br>城陽五里五里の丘
+                    </td>
+                </tr>
+                <tr>
+                    <th>主催/企画/制作</th>
+                    <td>
+                        株式会社スターリーナイトカンパニー
+                    </td>
+                </tr>
+            </table> -->
 
-            <p id="pageTop"><a href="#pTop"><img src="./img/common/arrow_w.svg" alt="ページトップへ"></a></p>
-        </div>
+        <p id="pageTop"><a href="#pTop"><img src="./img/common/arrow_w.svg" alt="ページトップへ"></a></p>
     </main>
     <!-- Footer -->
     <?php include('./php/common/footer.php'); ?>
